@@ -6,11 +6,33 @@
 
 .container {
     background-color: rgb(237, 227, 210);
+    height: fit-content;
+    margin-top: 3.6rem;
 }
 
 .cards {
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.card-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-basis: calc(100% / 3);
+    margin-top: 50px;
+}
+
+.card-container img {
+    height: 100%;
+    padding: 20px;
+}
+
+p {
+    padding-bottom: 6rem;
 }
