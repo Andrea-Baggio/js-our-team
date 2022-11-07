@@ -41,7 +41,7 @@ const objMembers = [
 // eleContainer.innerHTML += objMembers[1].name + ', ';
 // eleContainer.innerHTML += objMembers[1].job;
 
-const eleCard = document.querySelector('.card');
+const eleCard = document.querySelector('.cards');
 
 for (let i = 0; i < objMembers.length; i++) {
 	const eleImg = document.createElement('img');
