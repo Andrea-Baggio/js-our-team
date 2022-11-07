@@ -1,11 +1,9 @@
 /*
-MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
-MILESTONE 1:
-Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
+
+const eleContainer = document.querySelector('.container');
 
 const objMembers = [
     membro1 = {
@@ -40,26 +38,17 @@ const objMembers = [
     },
 ];
 
-console.log(objMembers[1].name);
-console.log(objMembers[1].job);
-console.log(objMembers[1].picture);
+eleContainer.innerHTML += objMembers[1].name + ', ';
+eleContainer.innerHTML += objMembers[1].job;
 
-console.log(objMembers[2].name);
-console.log(objMembers[2].job);
-console.log(objMembers[2].picture);
+const eleCard = document.querySelector('.card');
 
-console.log(objMembers[3].name);
-console.log(objMembers[3].job);
-console.log(objMembers[3].picture);
+for (let i = 0; i < objMembers.length; i++) {
+	const eleImg = document.createElement('img');
+	eleImg.src = objMembers[i].picture;
 
-console.log(objMembers[4].name);
-console.log(objMembers[4].job);
-console.log(objMembers[4].picture);
+	// eleImg.classList.add('member-img');
+	eleCard.append(eleImg);
 
-console.log(objMembers[5].name);
-console.log(objMembers[5].job);
-console.log(objMembers[5].picture);
-
-console.log(objMembers[6].name);
-console.log(objMembers[6].job);
-console.log(objMembers[6].picture);
+    console.log(objMembers[i]);
+}
