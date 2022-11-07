@@ -7,3 +7,10 @@
 .container {
     background-color: rgb(237, 227, 210);
 }
+
+.card {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

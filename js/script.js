@@ -38,16 +38,14 @@ const objMembers = [
     },
 ];
 
-eleContainer.innerHTML += objMembers[1].name + ', ';
-eleContainer.innerHTML += objMembers[1].job;
+// eleContainer.innerHTML += objMembers[1].name + ', ';
+// eleContainer.innerHTML += objMembers[1].job;
 
 const eleCard = document.querySelector('.card');
 
 for (let i = 0; i < objMembers.length; i++) {
 	const eleImg = document.createElement('img');
 	eleImg.src = objMembers[i].picture;
-
-	// eleImg.classList.add('member-img');
 	eleCard.append(eleImg);
 
     console.log(objMembers[i]);
