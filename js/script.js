@@ -30,175 +30,6 @@ const objMembers = [
         job: 'Graphic Designer',
         picture: 'img/barbara-ramos-graphic-designer.jpg'
     },
-    {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    }, {
-        name: 'Angela Lopez',
-        job: 'Media Manager',
-        picture: 'img/angela-lopez-social-media-manager.jpg'
-    },
-    {
-        name: 'Scott Estrada',
-        job: 'Developer',
-        picture: 'img/scott-estrada-developer.jpg'
-    },
-    {
-        name: 'Barbara Ramos',
-        job: 'Graphic Designer',
-        picture: 'img/barbara-ramos-graphic-designer.jpg'
-    },
 ];
 
 
@@ -210,10 +41,12 @@ for (let i = 0; i < objMembers.length; i++) {
 
     eleCard.classList.add('card-container')
 	eleImg.src = objMembers[i].picture;
-    eleP.innerHTML += objMembers[i].name + ' ' + objMembers[i].job;
 
 	eleCard.append(eleImg);
 	eleCard.append(eleP);
 	eleCards.append(eleCard);
+    eleP.append(objMembers[i].name)
+    eleP.append(', ');
+    eleP.append(objMembers[i].job)
 }
 
